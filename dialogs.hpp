@@ -1,4 +1,4 @@
-﻿class Nummernschild
+﻿class LicensePlateMenu
 {
     idd=-1;
     movingenable=false;   
@@ -6,7 +6,7 @@
     class controls
     {
 
-	class Nummernschild_frame: RscFrame
+	class LicensePlateMenud_frame: RscFrame
 	{
 		idc = -1;	
 		x = 0.391719 * safezoneW + safezoneX;
@@ -14,7 +14,7 @@
 		w = 0.216563 * safezoneW;
 		h = 0.099 * safezoneH;
 	};
-	class Nummernschild_box: RscBox
+	class LicensePlateMenu_box: RscBox
 	{
 		idc = -1;
 		sizeEx = 0.035;
@@ -23,7 +23,7 @@
 		w = 0.216563 * safezoneW;
 		h = 0.099 * safezoneH;
 	};
-	class Nummernschild_text: RscText
+	class LicensePlateMenu_text: RscText
 	{
 		idc = -1;
 		text = "Gib eine Zeichenfolge für dein Nummernschild ein:";
@@ -33,16 +33,16 @@
 		w = 0.221719 * safezoneW;
 		h = 0.044 * safezoneH;
 	};
-	class RscPicture_1200: RscPicture
+	class LicensePlateMenu_Picture: RscPicture
 	{
 		idc = 1200;
-		text = "Nummernschild.paa";
+		text = "LicensePlate.paa";
 		x = 0.396875 * safezoneW + safezoneX;
 		y = 0.456 * safezoneH + safezoneY;
 		w = 0.154687 * safezoneW;
 		h = 0.055 * safezoneH;
 	};
-	class Nummernschild_edit: RscEdit
+	class LicensePlateMenu_edit: RscEdit
 	{
 		idc = 1337;
 		text = "";
@@ -65,7 +65,7 @@
 		w = 0.154687 * safezoneW;
 		h = 0.055 * safezoneH;
 	};
-	class Nummernschild_button_ok: RscButton
+	class LicensePlateMenu_button_ok: RscButton
 	{
 		idc = 1600;
 		text = "OK";
@@ -73,7 +73,7 @@
 		y = 0.456 * safezoneH + safezoneY;
 		w = 0.04125 * safezoneW;
 		h = 0.055 * safezoneH;
-		action = "_nil = []execVM ""fn_changeNummernschild.sqf""";
+		action = "_nil = []execVM ""fn_changeLicensePlate.sqf""";
 	};
     };
 };
