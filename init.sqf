@@ -1,2 +1,2 @@
-LicensePlate_Blacklist = ["88", "SS", "test"];
+LicensePlate_Blacklist = ["test"];
 fnc_contains = compile preprocessFile "fn_contains.sqf";
